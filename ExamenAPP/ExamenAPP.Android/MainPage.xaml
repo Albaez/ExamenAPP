@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:ExamenApp.ViewModels"
+            x:Class="ExamenApp.MainPage">
+    <TabbedPage.Children>
+        <ContentPage Title="Area del círculo">
+            <StackLayout>
+                <Label Text="Radio:" />
+                <Entry Keyboard="Numeric" Text="{Binding Radio}" />
+                <Label Text="Area:" />
+                <Label TextColor="Green" Text="{Binding Area}" />
+                <Button Text="Calcular" Command="{Binding CalcularAreaCommand}" />
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Area del rectángulo">
+            <StackLayout>
+                <Label Text="Base:" />
+                <Entry Keyboard="Numeric" Text="{Binding BaseRectangulo}" />
+                <Label Text="Altura:" />
+                <Entry Keyboard="Numeric" Text="{Binding AlturaRectangulo}" />
+                <Label Text="Area:" />
+                <Label TextColor="Green" Text="{Binding Area}" />
+                <Button Text="Calcular" Command="{Binding CalcularAreaCommand}" />
+            </StackLayout>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>
